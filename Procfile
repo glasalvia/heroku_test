@@ -1,1 +1,1 @@
-web: gunicorn heroku_test.wsgi
+web: python manage.py collectstatic --no-input; gunicorn heroku_test.wsgi
