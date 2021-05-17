@@ -2,11 +2,21 @@
     <head>
         {% load static %}
 
-        <link rel="stylesheet"  href="{%  static  'css/styles.css'  %}">
     </head>
     <body>
-        <div class="fondo">
-            Este es un contenedor
+        <div>
+            <h3>PyBot en telegram</h3>
+           <form method="POST">
+            {% csrf_token %}
+            <button class="btn btn-danger btn-block btn-round">Activar</button>
+       </form>
         </div>
     </body>
 </html>
+
+
+
+
+
+
+
